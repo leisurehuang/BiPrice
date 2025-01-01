@@ -12,6 +12,10 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - name: Set up Xcode
+        uses: apple-actions/setup-xcode@v2
+        with:
+          xcode-version: '16.2' 
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set Default Scheme
